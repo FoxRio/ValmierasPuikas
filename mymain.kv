@@ -1,0 +1,131 @@
+WindowManager:
+    MainWindow:
+    SecondWindow:
+    VerisWindow:
+    KaratavuWindow:
+    ValterkalninsWindow:
+    SimanaWindow:
+
+<MainWindow>:
+    name: "main"
+
+    GridLayout:
+        cols:1
+
+        Label:
+            text: "Valmieras puikas"
+            font_size: 80
+
+        Label:
+
+            text: "Pāvils Rozītis"
+            font_size: 40
+
+
+        Button:
+            text: "Turpināt"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "down"
+
+
+<SecondWindow>:
+    name: "second"
+
+    GridLayout:
+        cols:1
+
+        Label:
+            text: "Svarīgākās vietas romānā"
+            font_size: 40
+
+
+        GridLayout:
+            cols:2
+
+            Button:
+                text: "Kauguru vēris"
+                on_release:
+                    app.root.current = "veris"
+                    root.manager.transition.direction = "down"
+
+            Button:
+                text: "Karātavu kalniņš"
+                on_release:
+                    app.root.current = "karatavas"
+                    root.manager.transition.direction = "down"
+            Button:
+                text: "Valterkalniņš"
+                on_release:
+                    app.root.current = "valters"
+                    root.manager.transition.direction = "down"
+            Button:
+                text: "Dzirnaviņu ezera slidotava"
+                on_release:
+                    app.root.current = "veris"
+                    root.manager.transition.direction = "down"
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "main"
+                root.manager.transition.direction = "up"
+
+
+<VerisWindow>:
+    name: "veris"
+
+    GridLayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+
+<KaratavuWindow>:
+    name: "karatavas"
+
+    GridLayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+<ValterkalninsWindow>:
+    name: "valters"
+    GridLayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+<SimanaWindow>:
+    name: "simana"
+    GridLayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
