@@ -17,7 +17,6 @@ WindowManager:
 <Button>:
     #background_normal: ''
     background_color: 0/255, 0/255, 0/255, 1
-    bold: True
 
 
 
@@ -101,7 +100,7 @@ WindowManager:
                     app.root.current = "valmiermuiza"
                     root.manager.transition.direction = "down"
             Button:
-                text: "ZilaisKalns"
+                text: "Zilaiskalns"
                 on_release:
                     app.root.current = "zilaiskalns"
                     root.manager.transition.direction = "down"
@@ -120,7 +119,6 @@ WindowManager:
                 on_release:
                     app.root.current = "kraces"
                     root.manager.transition.direction = "down"
-
         Button:
             text: "Atpakaļ"
             on_release:
@@ -170,6 +168,7 @@ WindowManager:
 
 <ValterkalninsWindow>:
     name: "valters"
+
     GridLayout:
         cols:1
 
@@ -246,9 +245,10 @@ WindowManager:
                 app.root.current = "second"
                 root.manager.transition.direction = "up"
 
+
 <SeminarsWindow>:
     name: "seminars"
-    Gridlayout:
+    GridLayout:
         cols:1
 
         Label:
@@ -266,9 +266,10 @@ WindowManager:
                 root.manager.transition.direction = "up"
 
 <ValmiermuizaWindow>:
-        name: "valmiermuiza"
-        cols:1
+    name: "valmiermuiza"
 
+    GridLayout:
+        cols:1
         Label:
             text: "info par vietu"
 
@@ -282,10 +283,9 @@ WindowManager:
             on_release:
                 app.root.current = "second"
                 root.manager.transition.direction = "up"
-
 <ZilaiskalnsWindow>:
     name: "zilaiskalns"
-    Gridlayout:
+    GridLayout:
         cols:1
 
         Label:
@@ -304,7 +304,7 @@ WindowManager:
 
 <PargaujaWindow>:
     name: "pargauja"
-    Gridlayout:
+    GridLayout:
         cols:1
 
         Label:
@@ -323,7 +323,7 @@ WindowManager:
 
 <StacijaWindow>:
     name: "stacija"
-    Gridlayout:
+    GridLayout:
         cols:1
 
         Label:
@@ -342,7 +342,7 @@ WindowManager:
 
 <KracesWindow>:
     name: "kraces"
-    Gridlayout:
+    GridLayout:
         cols:1
 
         Label:
@@ -358,3 +358,5 @@ WindowManager:
             on_release:
                 app.root.current = "second"
                 root.manager.transition.direction = "up"
+
+
