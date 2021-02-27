@@ -5,6 +5,20 @@ WindowManager:
     KaratavuWindow:
     ValterkalninsWindow:
     SimanaWindow:
+    EzerinaWindow:
+    StavieWindow:
+    SeminarsWindow:
+    ValmiermuizaWindow:
+    ZilaiskalnsWindow:
+    PargaujaWindow:
+    StacijaWindow:
+    KracesWindow:
+
+<Button>:
+    #background_normal: ''
+    background_color: 0/255, 0/255, 0/255, 1
+
+
 
 <MainWindow>:
     name: "main"
@@ -14,6 +28,7 @@ WindowManager:
 
         Label:
             text: "Valmieras puikas"
+
             font_size: 80
 
         Label:
@@ -62,7 +77,17 @@ WindowManager:
             Button:
                 text: "Dzirnaviņu ezera slidotava"
                 on_release:
-                    app.root.current = "veris"
+                    app.root.current = "ezers"
+                    root.manager.transition.direction = "down"
+            Button:
+                text: "Sv Sīmaņa baznīca"
+                on_release:
+                    app.root.current = "simana"
+                    root.manager.transition.direction = "down"
+            Button:
+                text: "Stāvie krasti"
+                on_release:
+                    app.root.current = "stavie"
                     root.manager.transition.direction = "down"
         Button:
             text: "Atpakaļ"
@@ -118,6 +143,36 @@ WindowManager:
 
 <SimanaWindow>:
     name: "simana"
+    GridLayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+
+<EzerinaWindow>:
+    name: "ezers"
+    GridLayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+
+<StavieWindow>:
+    name: "stavie"
     GridLayout:
         cols:1
 
