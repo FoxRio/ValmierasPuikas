@@ -17,6 +17,7 @@ WindowManager:
 <Button>:
     #background_normal: ''
     background_color: 0/255, 0/255, 0/255, 1
+    bold: True
 
 
 
@@ -89,6 +90,37 @@ WindowManager:
                 on_release:
                     app.root.current = "stavie"
                     root.manager.transition.direction = "down"
+            Button:
+                text: "Vidzemes skolotāju seminārs"
+                on_release:
+                    app.root.current = "seminars"
+                    root.manager.transition.direction = "down"
+            Button:
+                text: "Valmiermuiža"
+                on_release:
+                    app.root.current = "valmiermuiza"
+                    root.manager.transition.direction = "down"
+            Button:
+                text: "ZilaisKalns"
+                on_release:
+                    app.root.current = "zilaiskalns"
+                    root.manager.transition.direction = "down"
+            Button:
+                text: "Pārgauja"
+                on_release:
+                    app.root.current = "pargauja"
+                    root.manager.transition.direction = "down"
+            Button:
+                text: "Stacijas"
+                on_release:
+                    app.root.current = "stacija"
+                    root.manager.transition.direction = "down"
+            Button:
+                text: "Kazu krāces"
+                on_release:
+                    app.root.current = "kraces"
+                    root.manager.transition.direction = "down"
+
         Button:
             text: "Atpakaļ"
             on_release:
@@ -198,6 +230,119 @@ WindowManager:
 <StavieWindow>:
     name: "stavie"
     GridLayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atskaņot"
+            on_release:
+                root.play_music(".mp3")
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+<SeminarsWindow>:
+    name: "seminars"
+    Gridlayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atskaņot"
+            on_release:
+                root.play_music(".mp3")
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+<ValmiermuizaWindow>:
+        name: "valmiermuiza"
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atskaņot"
+            on_release:
+                root.play_music(".mp3")
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+<ZilaiskalnsWindow>:
+    name: "zilaiskalns"
+    Gridlayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atskaņot"
+            on_release:
+                root.play_music(".mp3")
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+<PargaujaWindow>:
+    name: "pargauja"
+    Gridlayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atskaņot"
+            on_release:
+                root.play_music(".mp3")
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+<StacijaWindow>:
+    name: "stacija"
+    Gridlayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atskaņot"
+            on_release:
+                root.play_music(".mp3")
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+<KracesWindow>:
+    name: "kraces"
+    Gridlayout:
         cols:1
 
         Label:
