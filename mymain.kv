@@ -89,6 +89,36 @@ WindowManager:
                 on_release:
                     app.root.current = "stavie"
                     root.manager.transition.direction = "down"
+            Button:
+                text: "Vidzemes skolotāju seminārs"
+                on_release:
+                    app.root.current = "seminars"
+                    root.manager.transition.direction = "down"
+            Button:
+                text: "Valmiermuiža"
+                on_release:
+                    app.root.current = "valmiermuiza"
+                    root.manager.transition.direction = "down"
+            Button:
+                text: "Zilaiskalns"
+                on_release:
+                    app.root.current = "zilaiskalns"
+                    root.manager.transition.direction = "down"
+            Button:
+                text: "Pārgauja"
+                on_release:
+                    app.root.current = "pargauja"
+                    root.manager.transition.direction = "down"
+            Button:
+                text: "Stacijas"
+                on_release:
+                    app.root.current = "stacija"
+                    root.manager.transition.direction = "down"
+            Button:
+                text: "Kazu krāces"
+                on_release:
+                    app.root.current = "kraces"
+                    root.manager.transition.direction = "down"
         Button:
             text: "Atpakaļ"
             on_release:
@@ -138,6 +168,7 @@ WindowManager:
 
 <ValterkalninsWindow>:
     name: "valters"
+
     GridLayout:
         cols:1
 
@@ -213,3 +244,119 @@ WindowManager:
             on_release:
                 app.root.current = "second"
                 root.manager.transition.direction = "up"
+
+
+<SeminarsWindow>:
+    name: "seminars"
+    GridLayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atskaņot"
+            on_release:
+                root.play_music(".mp3")
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+<ValmiermuizaWindow>:
+    name: "valmiermuiza"
+
+    GridLayout:
+        cols:1
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atskaņot"
+            on_release:
+                root.play_music(".mp3")
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+<ZilaiskalnsWindow>:
+    name: "zilaiskalns"
+    GridLayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atskaņot"
+            on_release:
+                root.play_music(".mp3")
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+<PargaujaWindow>:
+    name: "pargauja"
+    GridLayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atskaņot"
+            on_release:
+                root.play_music(".mp3")
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+<StacijaWindow>:
+    name: "stacija"
+    GridLayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atskaņot"
+            on_release:
+                root.play_music(".mp3")
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+<KracesWindow>:
+    name: "kraces"
+    GridLayout:
+        cols:1
+
+        Label:
+            text: "info par vietu"
+
+        Button:
+            text: "Atskaņot"
+            on_release:
+                root.play_music(".mp3")
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
+
