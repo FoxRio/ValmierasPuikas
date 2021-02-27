@@ -113,7 +113,7 @@ kv = Builder.load_file("mymain.kv")
 
 class MyMainApp(App):
     def build(self):
-        Window.clearcolor = (1, 69/255, 0, 0.7)
+        Window.clearcolor = (128/255, 0/255, 32/255, 0.7) # background label
         return kv
 
 
