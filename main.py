@@ -1,9 +1,9 @@
-import kivy
+from kivy.core.audio import SoundLoader
 from kivy.app import App
-from kivy.uix.widget import Widget
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.core.window import Window
+
 
 
 class MainWindow(Screen):
@@ -15,55 +15,97 @@ class SecondWindow(Screen):
 
 
 class VerisWindow(Screen):
-    pass
+    def play_music(self, fails):
+        music = SoundLoader.load(fails)
+        if music:
+            music.play()    # nospēlējas līdz galam. Neapstājas, ja iziet.
+                            # Bail iedomāties, kas notiek, ja palaiž vairākas reizē
+                            #nvm checked viss slikti
+
 
 
 class KaratavuWindow(Screen):
-    pass
+    def play_music(self, fails):
+        music = SoundLoader.load(fails)
+        if music:
+            music.play()
 
 
 class ValterkalninsWindow(Screen):
-    pass
+    def play_music(self, fails):
+        music = SoundLoader.load(fails)
+        if music:
+            music.play()
 
 
 class EzerinaWindow(Screen):
-    pass
+    def play_music(self, fails):
+        music = SoundLoader.load(fails)
+        if music:
+            music.play()
 
 
 class SimanaWindow(Screen):
-    pass
+    def play_music(self, fails):
+        music = SoundLoader.load(fails)
+        if music:
+            music.play()
 
 
 class StavieWindow(Screen):
-    pass
+    def play_music(self, fails):
+        music = SoundLoader.load(fails)
+        if music:
+            music.play()
 
 
 class SeminarsWindow(Screen):
-    pass
+    def play_music(self, fails):
+        music = SoundLoader.load(fails)
+        if music:
+            music.play()
 
 
 class ValmiermuizaWindow(Screen):
-    pass
+    def play_music(self, fails):
+        music = SoundLoader.load(fails)
+        if music:
+            music.play()
 
 
 class ZilaiskalnsWindow(Screen):
-    pass
+    def play_music(self, fails):
+        music = SoundLoader.load(fails)
+        if music:
+            music.play()
 
 
 class PargaujaWindow(Screen):
-    pass
+    def play_music(self, fails):
+        music = SoundLoader.load(fails)
+        if music:
+            music.play()
 
 
 class StacijaWindow(Screen):
-    pass
+    def play_music(self, fails):
+        music = SoundLoader.load(fails)
+        if music:
+            music.play()
 
 
 class KracesWindow(Screen):
-    pass
+    def play_music(self, fails):
+        music = SoundLoader.load(fails)
+        if music:
+            music.play()
 
 
 class WindowManager(ScreenManager):
-    pass
+    def play_music(self, fails):
+        music = SoundLoader.load(fails)
+        if music:
+            music.play()
 
 
 kv = Builder.load_file("mymain.kv")
