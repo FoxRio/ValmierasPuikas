@@ -13,6 +13,7 @@ WindowManager:
     PargaujaWindow:
     StacijaWindow:
     KracesWindow:
+    PiemineklisWindow:
 
 <Button>:
     #background_normal: ''
@@ -53,6 +54,14 @@ WindowManager:
         Label:
             text: "Svarīgākās vietas romānā"
             font_size: 40
+        Button:
+            text: "Piemineklis"
+            font_size: 55
+            color:(4/255, 118/255,110,1)
+            background_down: "piemineklis.jfif"
+            on_release:
+                app.root.current = "piemineklis"
+                root.manager.transition.direction = "down"
 
 
         GridLayout:
@@ -60,62 +69,74 @@ WindowManager:
 
             Button:
                 text: "Kauguru vēris"
+                background_down: "veris.jfif"
                 on_release:
                     app.root.current = "veris"
                     root.manager.transition.direction = "down"
 
             Button:
                 text: "Karātavu kalniņš"
+                background_down: "karatavas.jfif"
                 on_release:
                     app.root.current = "karatavas"
                     root.manager.transition.direction = "down"
             Button:
                 text: "Valterkalniņš"
+                background_down: "valterkalns.jfif"
                 on_release:
                     app.root.current = "valters"
                     root.manager.transition.direction = "down"
             Button:
                 text: "Dzirnaviņu ezera slidotava"
+                background_down: "ezerins.jfif"
                 on_release:
                     app.root.current = "ezers"
                     root.manager.transition.direction = "down"
             Button:
                 text: "Sv. Sīmaņa baznīca"
+                background_down: "simana.jfif"
                 on_release:
                     app.root.current = "simana"
                     root.manager.transition.direction = "down"
             Button:
                 text: "Stāvie krasti"
+                background_down: "stavie.jfif"
                 on_release:
                     app.root.current = "stavie"
                     root.manager.transition.direction = "down"
             Button:
                 text: "Skolotāju seminārs"
+                background_down: "seminars.jfif"
                 on_release:
                     app.root.current = "seminars"
                     root.manager.transition.direction = "down"
             Button:
                 text: "Valmiermuiža"
+                background_down: "Valmiermuiza.jfif"
                 on_release:
                     app.root.current = "valmiermuiza"
                     root.manager.transition.direction = "down"
             Button:
                 text: "Zilaiskalns"
+                background_down: "zilaiskalns.jfif"
                 on_release:
                     app.root.current = "zilaiskalns"
                     root.manager.transition.direction = "down"
             Button:
                 text: "Pārgauja"
+                background_down: "pargauja.jfif"
                 on_release:
                     app.root.current = "pargauja"
                     root.manager.transition.direction = "down"
             Button:
                 text: "Stacija"
+                background_down: "stacija.jfif"
                 on_release:
                     app.root.current = "stacija"
                     root.manager.transition.direction = "down"
             Button:
                 text: "Kazu krāces"
+                background_down: "kraces.jfif"
                 on_release:
                     app.root.current = "kraces"
                     root.manager.transition.direction = "down"
@@ -133,7 +154,7 @@ WindowManager:
         cols:1
 
         Label:
-            text: "info par vietu"
+            text: "Tas ir mežs, kas atrodas pie vecā dzelzceļa tilta. Šeit 1934. gada pavasarī zemnieku nemieros kritušo kapa vietā Kaugurvērī ierīkoja piemiņas vietu, bet 1939. gadā tur atklāja piemiņas plāksni."
         Button:
             text: "Atskaņot"
             on_release:
@@ -308,7 +329,7 @@ WindowManager:
         cols:1
 
         Label:
-            text: "info par vietu"
+            text: "Pārgauja ir Valmieras pilsētas daļa Gaujas kreisajā krastā. Par Pārgauju bieži dēvē visu Valmieras teritoriju Gaujas kreisajā krastā, kaut šajā pilsētas daļā atrodas arī Kārliena (pie Valmieras stacijas), Krāču kakts (Gaujas ielokā), Kauguru vēris un agrākās Kaugurmuižas centrs. Pārgaujā atrodas Valmieras Pārgaujas ģimnāzija un Valmieras Pārgaujas sākumskola. Pirmo koka tiltu pār Gauju uzcēla 1865. gadā, strauja ēku celtniecība Pārgaujā sākās pēc Rīgas—Pēterburgas dzelzceļa (1899) un Ainažu—Valmieras—Smiltenes dzelzceļa (1911—1912) atklāšanas."
 
         Button:
             text: "Atskaņot"
@@ -358,5 +379,20 @@ WindowManager:
             on_release:
                 app.root.current = "second"
                 root.manager.transition.direction = "up"
+
+<PiemineklisWindow>:
+    name: "piemineklis"
+    GridLayout:
+        cols:1
+
+        Label:
+            text: "Šī pieminekļa tēlniece ir Timiāna Munkēviča, un piemineklis tika atklāts 1981.gadā. Tēlniece tajā ir iemūžinājusi Pāvila Rozīša romāna "Valmieras puikas" varoņus. Piemineklī esošie tēli tēli netiešā veidā attēlo romāna autoru un viņa viņa laikabiedrus: rakstnieku Linardu Laicēnu un tēlnieku Emīlu Melderi. Sākotnēji skulptūra atradās pie Valmieras novadpētniecības muzeja, taču 2007. gadā tā tika pārcelta pie Vidzemes Augstskolas, kur Valmieras jaunieši var mēģināt atpazīt sevi kādā no attēlotajiem sparīgajiem jaunekļiem. Koordinātas: 57.5346773, 25.4243659"
+
+        Button:
+            text: "Atpakaļ"
+            on_release:
+                app.root.current = "second"
+                root.manager.transition.direction = "up"
+
 
 
