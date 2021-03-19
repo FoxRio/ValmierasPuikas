@@ -1,9 +1,10 @@
+# Lietotne android telefoniem. Vēl progresā, bet .apk failu arī vari pielikt.
+# Pa taisno no windows uz android pārveidot nevar, jātaisa Linux VM
 from kivy.core.audio import SoundLoader
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.core.window import Window
-
 
 
 class MainWindow(Screen):
@@ -14,14 +15,15 @@ class SecondWindow(Screen):
     pass
 
 
+class PiemineklisWindow(Screen):
+    pass
+
+
 class VerisWindow(Screen):
     def play_music(self, fails):
         music = SoundLoader.load(fails)
         if music:
-            music.play()    # nospēlējas līdz galam. Neapstājas, ja iziet.
-                            # Bail iedomāties, kas notiek, ja palaiž vairākas reizē
-                            #nvm checked viss slikti
-
+            music.play()
 
 
 class KaratavuWindow(Screen):
