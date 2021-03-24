@@ -5,3 +5,4 @@ Lapā redzams vietas attēls, nelielu faktu apkopojums kā arī pievienots audio
 *dzirnavu ezeriņš* Tāpat par katru objektu varam noklausīties audio failu par to, kā šī vieta ir saistīta ar romānu vai kādu interesantu faktu. *play audio*
 *krācēm* Aplikācijā pieejama informācija par dažiem no Valmieras dabiskajiem apskates objektiem, kā Gaujas Stāvie krasti un Kazu Krāces, kuri arī romānā kalpoja kā pastaigas vietas vai svarīgu notikumu norises vietas, piemēram, Ritas pirmā saruna ar Lausu vai .Valmieras puiku slepenās sapulces.
 *sīmaņa baznīca* Esam iekļāvuši informāciju arī par citām Valmierai nozīmīgām vietām, kā sv. Sīmaņa baznīca.
+*nobeigums* Šobrīd  applikācija ir agrīnā stadijā un  ir pieejama tikai android ierīcēm, taču nākotnē ir iespējams atbalstīt IOS jeb Apple sistēmām, kā arī paplašināt aplikācijas funkcionalitāti- peivienot, interaktīvu karti, vairāku valodu atbalstu, kā arī paplašināt attēlu galeriju.
