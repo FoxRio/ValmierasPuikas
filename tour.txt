@@ -1,8 +1,8 @@
-Un tagad vairāk par pašu aplikāciju.
-Sniedzam iespēju uzzināt mazliet vairāk par vietām, kurās norisinājās romāna galvenie notikumi. Katrai no šīm vietām ir atvēlēta atsevišķa informatīva lapa.
-Lapā redzams vietas attēls, nelielu faktu apkopojums kā arī pievienots audio fails, kurā ir mazliet vairāk pastāstīts par šo vietu saistībā ar romānu.
+Un tagad nedaudz par pašu aplikāciju.
+Tā Sniedz iespēju uzzināt mazliet vairāk par vietām, kurās norisinājās romāna galvenie notikumi. Katrai no šīm vietām ir atvēlēta atsevišķa informatīva lapa.
+Lapā redzams vietas attēls, neliels faktu apkopojums kā arī pievienots audio fails, kurā ir mazliet vairāk pastāstīts par šīs vietas saistību ar romānu.
 *piemineklis* Piemēram, pie pieminekļa var redzēt vienu no mūsu pašu uzņemtajiem attēliem un īsu informāciju par pašu pieminekli un tā autori.
-*dzirnavu ezeriņš* Tāpat par katru objektu varam noklausīties audio failu par to, kā šī vieta ir saistīta ar romānu vai kādu interesantu faktu. *play audio*
-*krācēm* Aplikācijā pieejama informācija par dažiem no Valmieras dabiskajiem apskates objektiem, kā Gaujas Stāvie krasti un Kazu Krāces, kuri arī romānā kalpoja kā pastaigas vietas vai svarīgu notikumu norises vietas, piemēram, Ritas pirmā saruna ar Lausu vai .Valmieras puiku slepenās sapulces.
+*dzirnavu ezeriņš* Tāpat par katru objektu varam noklausīties audio failu, kurā dzirdams, kā šī vieta ir saistīta ar romānu vai kādu interesantu faktu par to. *play audio*
+*krācēm* Aplikācijā pieejama informācija par dažiem no Valmieras dabiskajiem apskates objektiem, kā Gaujas Stāvie krasti un Kazu Krāces, kuri arī romānā kalpoja kā pastaigu vai svarīgu notikumu norises vietas, piemēram, Ritas pirmā saruna ar Lausu vai Valmieras puiku slepenās sapulču vietas.
 *sīmaņa baznīca* Esam iekļāvuši informāciju arī par citām Valmierai nozīmīgām vietām, kā sv. Sīmaņa baznīca.
-*nobeigums* Šobrīd  applikācija ir agrīnā stadijā un  ir pieejama tikai android ierīcēm, taču nākotnē ir iespējams atbalstīt IOS jeb Apple sistēmām, kā arī paplašināt aplikācijas funkcionalitāti- peivienot, interaktīvu karti, vairāku valodu atbalstu, kā arī paplašināt attēlu galeriju.
+*nobeigums* Šobrīd  aplikācija ir agrīnā stadijā un ir pieejama tikai android ierīcēm, taču nākotnē ir iespējams atbalstīt IOS jeb Apple sistēmas, kā arī paplašināt aplikācijas funkcionalitāti- pievienot, interaktīvu karti, vairāku valodu atbalstu, kā arī paplašināt attēlu galeriju.
