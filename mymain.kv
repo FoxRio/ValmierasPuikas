@@ -18,6 +18,7 @@ WindowManager:
 <Button>:
     #background_normal: ''
     background_color: 0/255, 0/255, 0/255, 1
+    bold:True
 
 
 
@@ -29,15 +30,17 @@ WindowManager:
 
         Label:
             text: "Valmieras puikas"
+            bold:True
             font_size: 80
 
         Label:
-
+            bold:True
             text: "Pāvils Rozītis"
             font_size: 40
 
 
         Button:
+            size_hint_y: 0.3
             text: "Turpināt"
             on_release:
                 app.root.current = "second"
@@ -52,12 +55,13 @@ WindowManager:
 
         Label:
             text: "Svarīgākās vietas romānā"
-            font_size: 40
+            bold:True
+            font_size: 60
         Button:
             size_hint_y: 0.4
             text: "Piemineklis"
             font_size: 55
-            color:(4/255, 118/255,110,1)
+            color:(212/255, 108/255,108/255,1)
             on_release:
                 app.root.current = "piemineklis"
                 root.manager.transition.direction = "down"
@@ -128,7 +132,7 @@ WindowManager:
                     app.root.current = "kraces"
                     root.manager.transition.direction = "down"
         Button:
-            size_hint_y: 0.4
+            size_hint_y: 0.2
             text: "Atpakaļ"
             on_release:
                 app.root.current = "main"
@@ -147,11 +151,13 @@ WindowManager:
             halign: "center"
             valign: "middle"
         Button:
+            size_hint_y: 0.2
             text: "Atskaņot"
             on_release:
-                root.play_music("veris.mp3")
+                root.play_music(".mp3")
 
         Button:
+            size_hint_y: 0.1
             text: "Atpakaļ"
             on_release:
                 app.root.current = "second"
@@ -170,13 +176,13 @@ WindowManager:
             halign: "center"
             valign: "middle"
         Button:
-            size_hint_y: 0.4
+            size_hint_y: 0.2
             text: "Atskaņot"
             on_release:
                 root.play_music(".mp3")
 
         Button:
-            size_hint_y: 0.4
+            size_hint_y: 0.1
             text: "Atpakaļ"
             on_release:
                 app.root.current = "second"
@@ -210,14 +216,16 @@ WindowManager:
         cols:1
 
         Label:
-            text: "Valmieras Svētā Sīmaņa baznīca ir luterāņu dievnams, kas atrodas Valmierā. Tās celtniecība Gaujas stāvajā krastā tika uzsākta 1283. gadā, un tā ir viena no senākajām mūra celtnēm Latvijā. Tiek uzskatīts, ka tās nosaukums ir radies saistībā ar tās iesvētīšanu Sīmaņa un Jūdas dienā - 28. oktobrī.  \n Pirmos dažus gadsimtus tā kalpoa par katoļu draudzi, taču 16. gs. vidū Livonijas landtāgs pasludināja luterāņu ticības brīvību Livonijā, kas ļāva šai baznīcai kļūt par mūsdienās vienu no lielākajām luterāņu draudzēm Latvijā. Ziemeļu kara laikā 1702. gadā baznīca tika izdedzināta, taču atjaunota tika laikā no 1720. līdz 1739. gadam."
+            text: "Valmieras Svētā Sīmaņa baznīca ir luterāņu dievnams, kas atrodas Valmierā. Tās celtniecība Gaujas stāvajā krastā tika uzsākta 1283. gadā, un tā ir viena no senākajām mūra celtnēm Latvijā. Tiek uzskatīts, ka tās nosaukums ir radies saistībā ar tās iesvētīšanu Sīmaņa un Jūdas dienā - 28. oktobrī.  \nPirmos dažus gadsimtus tā kalpoa par katoļu draudzi, taču 16. gs. vidū Livonijas landtāgs pasludināja luterāņu ticības brīvību Livonijā, kas ļāva šai baznīcai kļūt par mūsdienās vienu no lielākajām luterāņu draudzēm Latvijā. Ziemeļu kara laikā 1702. gadā baznīca tika izdedzināta, taču atjaunota tika laikā no 1720. līdz 1739. gadam."
             text_size: self.size
         Button:
+            size_hint_y: 0.2
             text: "Atskaņot"
             on_release:
                 root.play_music(".mp3")
 
         Button:
+            size_hint_y: 0.1
             text: "Atpakaļ"
             on_release:
                 app.root.current = "second"
@@ -234,12 +242,15 @@ WindowManager:
             text_size: self.size
             halign: "center"
             valign: "middle"
+            
         Button:
+            size_hint_y: 0.2
             text: "Atskaņot"
             on_release:
                 root.play_music(".mp3")
 
         Button:
+            size_hint_y: 0.1
             text: "Atpakaļ"
             on_release:
                 app.root.current = "second"
@@ -256,12 +267,15 @@ WindowManager:
             text_size: self.size
             halign: "center"
             valign: "middle"
+            
         Button:
+            size_hint_y: 0.2
             text: "Atskaņot"
             on_release:
                 root.play_music(".mp3")
 
         Button:
+            size_hint_y: 0.1
             text: "Atpakaļ"
             on_release:
                 app.root.current = "second"
@@ -279,11 +293,13 @@ WindowManager:
             halign: "center"
             valign: "middle"
         Button:
+            size_hint_y: 0.2
             text: "Atskaņot"
             on_release:
                 root.play_music(".mp3")
 
         Button:
+            size_hint_y: 0.1
             text: "Atpakaļ"
             on_release:
                 app.root.current = "second"
@@ -299,12 +315,15 @@ WindowManager:
             text_size: self.size
             halign: "center"
             valign: "middle"
+            
         Button:
+            size_hint_y: 0.2
             text: "Atskaņot"
             on_release:
                 root.play_music(".mp3")
 
         Button:
+            size_hint_y: 0.1
             text: "Atpakaļ"
             on_release:
                 app.root.current = "second"
@@ -320,11 +339,13 @@ WindowManager:
             halign: "center"
             valign: "middle"
         Button:
+            size_hint_y: 0.2
             text: "Atskaņot"
             on_release:
                 root.play_music(".mp3")
 
         Button:
+            size_hint_y: 0.1
             text: "Atpakaļ"
             on_release:
                 app.root.current = "second"
@@ -340,12 +361,15 @@ WindowManager:
             text_size: self.size
             halign: "center"
             valign: "middle"
+            
         Button:
+            size_hint_y: 0.2
             text: "Atskaņot"
             on_release:
                 root.play_music(".mp3")
 
         Button:
+            size_hint_y: 0.1
             text: "Atpakaļ"
             on_release:
                 app.root.current = "second"
@@ -363,13 +387,13 @@ WindowManager:
             valign: "middle"
 
         Button:
-            size_hint_y: 0.4
+            size_hint_y: 0.2
             text: "Atskaņot"
             on_release:
                 root.play_music(".mp3")
 
         Button:
-            size_hint_y: 0.4
+            size_hint_y: 0.1
             text: "Atpakaļ"
             on_release:
                 app.root.current = "second"
@@ -387,13 +411,13 @@ WindowManager:
             valign: "middle"
 
         Button:
-            size_hint_y: 0.4
+            size_hint_y: 0.2
             text: "Atskaņot"
             on_release:
                 root.play_music(".mp3")
 
         Button:
-            size_hint_y: 0.4
+            size_hint_y: 0.1
             text: "Atpakaļ"
             on_release:
                 app.root.current = "second"
@@ -410,6 +434,7 @@ WindowManager:
             halign: "center"
             valign: "middle"
         Button:
+            size_hint_y: 0.1
             text: "Atpakaļ"
             on_release:
                 app.root.current = "second"
