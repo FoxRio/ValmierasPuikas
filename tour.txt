@@ -2,6 +2,6 @@ Un tagad vairāk par pašu aplikāciju.
 Sniedzam iespēju uzzināt mazliet vairāk par vietām, kurās norisinājās romāna galvenie notikumi. Katrai no šīm vietām ir atvēlēta atsevišķa informatīva lapa.
 Lapā redzams vietas attēls, nelielu faktu apkopojums kā arī pievienots audio fails, kurā ir mazliet vairāk pastāstīts par šo vietu saistībā ar romānu.
 *piemineklis* Piemēram, pie pieminekļa var redzēt vienu no mūsu pašu uzņemtajiem attēliem un īsu informāciju par pašu pieminekli un tā autori.
-*dzirnavu ezeriņš* Savukārt, ja mēs pārejam uz kādu citu objektu, piemēram, dzirnavu ezeriņu, varam noklausīsīties audio failu par to, kā šī vieta ir saistīta ar romānu. *play audio*
-*krācēm* Tāpat mums ir arī pievienota informācija par dažiem no Valmieras dabiskajiem apskates objektiem, kā Gaujas Stāvie krasti un Kazu Krāces. Arī romānā tie kalpoja kā pastaigas vietas vai kā vietas, kur norisinājās daži no svarīgajiem notikumiem, piemēram, Ritas pirmā saruna ar Lausu.
-*sīmaņa baznīca* Un tad ir arī citas vietas, kuras romānā netika tik īpaši izceltas, taču kuras ir neatņemama Valmieras daļa. Tāda bija Sīmaņa baznīca.
+*dzirnavu ezeriņš* Tāpat par katru objektu varam noklausīties audio failu par to, kā šī vieta ir saistīta ar romānu vai kādu interesantu faktu. *play audio*
+*krācēm* Aplikācijā pieejama informācija par dažiem no Valmieras dabiskajiem apskates objektiem, kā Gaujas Stāvie krasti un Kazu Krāces, kuri arī romānā kalpoja kā pastaigas vietas vai svarīgu notikumu norises vietas, piemēram, Ritas pirmā saruna ar Lausu vai .Valmieras puiku slepenās sapulces.
+*sīmaņa baznīca* Esam iekļāvuši informāciju arī par citām Valmierai nozīmīgām vietām, kā sv. Sīmaņa baznīca.
