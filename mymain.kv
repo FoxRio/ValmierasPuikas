@@ -54,6 +54,7 @@ WindowManager:
             text: "Svarīgākās vietas romānā"
             font_size: 40
         Button:
+            size_hint_y: 0.4
             text: "Piemineklis"
             font_size: 55
             color:(4/255, 118/255,110,1)
@@ -127,6 +128,7 @@ WindowManager:
                     app.root.current = "kraces"
                     root.manager.transition.direction = "down"
         Button:
+            size_hint_y: 0.4
             text: "Atpakaļ"
             on_release:
                 app.root.current = "main"
@@ -168,11 +170,13 @@ WindowManager:
             halign: "center"
             valign: "middle"
         Button:
+            size_hint_y: 0.4
             text: "Atskaņot"
             on_release:
                 root.play_music(".mp3")
 
         Button:
+            size_hint_y: 0.4
             text: "Atpakaļ"
             on_release:
                 app.root.current = "second"
@@ -185,7 +189,7 @@ WindowManager:
         cols:1
 
         Label:
-            text: "info par vietu"
+            text: "Valterkalniņš Valmierā ir iecienīta pastaigu un satikšanās vieta pie Rātsupītes ietekas Gaujā. 17. gadsimtā, Zviedru laikā tas izveidots kā ravelīns, kas ir nocietinājuma fragments. Savu nosaukumu šī vieta ieguva vēlāk, 18. gadsimta beigās. Tas cēlies no netālu dzīvojošās Valmieras baltvācu dzimtas - Valteriem, starp kuriem bija arī ievērojami ārsti un mācītāji. Visietekmīgākais no tiem bija Ferdinands Valters (1801-1869), kurš bija Valmieras skolotāju semināra pamatlicējs."
             text_size: self.size
             halign: "center"
             valign: "middle"
@@ -206,7 +210,7 @@ WindowManager:
         cols:1
 
         Label:
-            text: "info par vietu"
+            text: "Valmieras Svētā Sīmaņa baznīca ir luterāņu dievnams, kas atrodas Valmierā. Tās celtniecība Gaujas stāvajā krastā tika uzsākta 1283. gadā, un tā ir viena no senākajām mūra celtnēm Latvijā. Tiek uzskatīts, ka tās nosaukums ir radies saistībā ar tās iesvētīšanu Sīmaņa un Jūdas dienā - 28. oktobrī.  \n Pirmos dažus gadsimtus tā kalpoa par katoļu draudzi, taču 16. gs. vidū Livonijas landtāgs pasludināja luterāņu ticības brīvību Livonijā, kas ļāva šai baznīcai kļūt par mūsdienās vienu no lielākajām luterāņu draudzēm Latvijā. Ziemeļu kara laikā 1702. gadā baznīca tika izdedzināta, taču atjaunota tika laikā no 1720. līdz 1739. gadam."
             text_size: self.size
         Button:
             text: "Atskaņot"
@@ -226,7 +230,7 @@ WindowManager:
         cols:1
 
         Label:
-            text: "info par vietu"
+            text: "Sākotnēji Dzirnavu ezeriņš bija daļa no viduslaiku Valmieras aizsargsistēmas, kuru galvenokārt veidoja Rātes upītes dambji un slūžas, ar kuru palīdzību nepieciešamības gadījumos, piemēram, ja pilsētai tuvojās ienaidnieka karaspēks, tika uzpludināts ūdens.\n 19.gadsimtā Dzirnavu ezeriņš tāpat kā Rātes upīte sadalīja pilsētas un Valmiermuižas teritoriju, jo tieši aiz dzirnavu dambja beidzās Valmieras pilsētas jurisdikcija un sākās jau Valmiermuižas valdījums. \nVēlāk ūdens daudzumu un padevi Dzirnavu ezeriņam regulēja ūdensdzirnavas, kuras atradās iepretim mūsdienu Valmieras Drāmas teātra ēkai. Tās darbojās no 17.gadsimta līdz 1937. gadam, kad veco dzirnavu ēku nojauca, kā morāli novecojušu un tehniski neatbilstošu Valmieras pilsētas valdes izdotajiem būvnoteikumiem.\n Šis ezers atrodas vēsturiski nozīmīgā vietā, starp Zilo bastionu un karātavu kalnu. \nDzirnavu ezeriņš visbeidzot tika uzpludināts 1968. gadā."
             text_size: self.size
             halign: "center"
             valign: "middle"
@@ -248,7 +252,7 @@ WindowManager:
         cols:1
 
         Label:
-            text: "info par vietu"
+            text: "Gaujas stāvie krasti ir vairākus simtus metrus garš 10 līdz 15 metrus augsts Gaujas augsto krastu atsegums Valmierā. Tie ir Valsts nozīmes aizsargājamais ģeoloģiskais dabas piemineklis. Stāvo krastu teritorijā 2013. gadā tika izveidots Sajūtu parks."
             text_size: self.size
             halign: "center"
             valign: "middle"
@@ -311,7 +315,7 @@ WindowManager:
         cols:1
 
         Label:
-            text: "info par vietu"
+            text: "---"
             text_size: self.size
             halign: "center"
             valign: "middle"
@@ -353,17 +357,19 @@ WindowManager:
         cols:1
 
         Label:
-            text: "info par vietu"
+            text: "---"
             text_size: self.size
             halign: "center"
             valign: "middle"
 
         Button:
+            size_hint_y: 0.4
             text: "Atskaņot"
             on_release:
                 root.play_music(".mp3")
 
         Button:
+            size_hint_y: 0.4
             text: "Atpakaļ"
             on_release:
                 app.root.current = "second"
@@ -375,17 +381,19 @@ WindowManager:
         cols:1
 
         Label:
-            text: "info par vietu"
+            text: "19.gadsimta 30.un 40. gados Gauja sākusi strauji izskalot krastus, tādā veidā apdraudot gan dzīvojamās ēkas, gan baznīcu. Šī iemesla dēļ tika nolemts veidot dambi, lai sadalītu upes spēku un mainītu virzienu, tādā veidā arī samazinot krasta eroziju un pasargājot jaunuzcelto tiltu no ledus."
             text_size: self.size
             halign: "center"
             valign: "middle"
 
         Button:
+            size_hint_y: 0.4
             text: "Atskaņot"
             on_release:
                 root.play_music(".mp3")
 
         Button:
+            size_hint_y: 0.4
             text: "Atpakaļ"
             on_release:
                 app.root.current = "second"
